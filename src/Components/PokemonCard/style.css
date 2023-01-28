@@ -1,0 +1,29 @@
+.css-b6lsxj-MuiButtonBase-root-MuiCardActionArea-root {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.css-b6lsxj-MuiButtonBase-root-MuiCardActionArea-root :is(img) {
+  width: 50%;
+}
+
+.css-b6lsxj-MuiButtonBase-root-MuiCardActionArea-root :is(.name-type) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-type :is(.MuiTypography-root) {
+  margin: 0 20px;
+  text-transform: capitalize
+}
+
+@media screen and (max-width: 468px) {
+  .css-b6lsxj-MuiButtonBase-root-MuiCardActionArea-root :is(.name-type) {
+    display: block;
+  }
+}
+
+.css-2bi4m2-MuiContainer-root {margin: 0 auto !important;}

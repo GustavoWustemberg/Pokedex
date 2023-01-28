@@ -1,0 +1,55 @@
+.ReactModal__Content {
+  width: 50rem;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.name-pokemon {
+  text-transform: capitalize;
+  margin-left: 10px;
+}
+
+.wh-margin :is(h3) {
+  margin: 0 10px;
+}
+
+.img-pokemon :is(img) {
+  width: 25%;
+}
+
+.prev-next {
+  max-width: 25rem;
+  justify-content: space-between;
+  margin: -15% auto 5% auto;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.t-capitalize {
+  text-transform: capitalize;
+}
+
+.btn-modal :is(button) {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-modal--voltar :is(button) {
+  width: 12rem;
+  height: 2rem;
+}
+
+.btn-modal--prev-next :is(button) {
+  padding: 10px;
+  border-radius: 2em;
+  font-size: 20px;
+}
