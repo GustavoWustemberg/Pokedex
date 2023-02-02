@@ -23,6 +23,17 @@ function Index({ isOpen, dataPokemon }) {
     setIsopen(false);
   }
 
+  let num = dataPokemon.data.height;
+  let numString = num.toString();
+  let numFormatted = numString.slice(0, -1) + '.' + numString.slice(-1);
+  console.log(numFormatted);
+
+  let num2 = dataPokemon.data.weight;
+  let numString2 = num2.toString();
+  let numFormatted2 = numString2.slice(0, -1) + '.' + numString2.slice(-1);
+  console.log(numFormatted2);
+
+
   const typeHandler = () => {
     if (dataPokemon.data.types[1]) {
       return dataPokemon.data.types[0].type.name + " | " + dataPokemon.data.types[1].type.name
@@ -69,9 +80,9 @@ function Index({ isOpen, dataPokemon }) {
         </div>
         <div className="d-flex wh-margin">
           <h3>Altura:</h3>
-          <p>{dataPokemon.data.height}</p>
+          <p>{numFormatted} m</p>
           <h3>Peso:</h3>
-          <p>{dataPokemon.data.weight}</p>
+          <p>{numFormatted2} kg</p>
         </div>
         <div className="d-flex btn-modal btn-modal--voltar"><button onClick={() => { window.location.reload(true) }}>Voltar</button></div>
       </Modal >

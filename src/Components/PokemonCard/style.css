@@ -5,8 +5,9 @@
   align-items: center;
 }
 
-.css-o69gx8-MuiCardMedia-root {
+.css-o69gx8-MuiCardMedia-root, .css-rhsghg {
   width: 50% !important;
+  margin: 0 auto !important;
 }
 
 .css-b6lsxj-MuiButtonBase-root-MuiCardActionArea-root :is(.name-type) {

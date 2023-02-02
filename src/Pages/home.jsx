@@ -14,9 +14,9 @@ function Home(inputProps) {
 
   console.log(pokemons)
 
-  function getPokemons() {
+  function getPokemons() {  
     let endPoints = [];
-    for (let i = 1; i <= 50; i++) {
+    for (let i = 1; i <= 500; i++) {
       endPoints.push(`https://pokeapi.co/api/v2/pokemon/${i}/`)
     }
     let response = axios.all(endPoints.map((endPoint) =>
